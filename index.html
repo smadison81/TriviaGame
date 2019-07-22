@@ -1,40 +1,28 @@
-<!doctype html>
 <html lang="en">
-
 <head>
-    <title>Quiz Game</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-
+    
+    <title>Trivium</title>
 </head>
-
 <body>
     <div class="container h-100">
         <div class="jumbotron my-auto">
-
-        <div class="timer"></div>
-        <div class="questions">
-            <p id="message"></p>
-            <p id="question-text"></p>
+            <!-- holder for the question text -->
+            <div class="questions">
+                <h3 id="questionText"></h3>
+            </div>
         </div>
-        <div>
-            <ul id="responses"></ul>
-        </div>
-        </div>
+        <!-- holder for the possible answers -->
+        <div id="responses"></div>
+        <!-- holder for the messages -->
+        <div id="messages"></div>
     </div>
-
-
-
-
-    <!-- Optional JavaScript -->
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -45,10 +33,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
     <script src="./assets/javascript/app.js"></script>
     <script>
-        // game.loadQuestion("question-text","responses");
+        game.loadQuestion("questionText","responses");
     </script>
 </body>
-
 </html>
